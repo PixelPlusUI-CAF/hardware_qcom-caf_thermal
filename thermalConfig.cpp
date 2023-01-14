@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020,2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -1600,22 +1600,6 @@ namespace implementation {
 		{475, sensor_cfg_yupik}, // yupik
 		{515, sensor_cfg_yupik}, // YUPIK-LTE
 		{486, sensor_cfg_monaco}, // monaco
-		{457, waipio_common}, //Waipio
-		{482, waipio_common}, //Waipio
-		{552, waipio_common}, //Waipio-LTE
-		{506, diwali_common}, //diwali
-		{547, diwali_common}, //diwali
-		{564, diwali_common}, //diwali-LTE
-		{530, waipio_common}, // cape
-		{531, waipio_common}, // cape
-		{540, waipio_common}, // cape
-		{525, neo_common},
-		{554, neo_common},
-		{537, parrot_common},
-		{549, anorak_common},
-		{568, ravelin_common}, //Clarence Mobile
-		{581, ravelin_common}, //Clarence IOT
-		{582, ravelin_common}, //Clarence IOT without modem
 	};
 
 	const std::unordered_map<int, std::vector<struct target_therm_cfg>>
@@ -1645,6 +1629,13 @@ namespace implementation {
 		{568, ravelin_specific}, //Clarence Mobile
 		{581, ravelin_specific}, //Clarence IOT
 		{582, ravelin_specific}, //Clarence IOT without modem
+	};
+
+	const std::unordered_map<int, bool>
+		battery_bcl_cfg_disable_map = {
+		{367, true},
+		{377, true},
+		{380, true},
 	};
 
 	const std::unordered_map<int, bool>
